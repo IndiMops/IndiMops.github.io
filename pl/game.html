@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="fetch_steam.js"></script>
     <title>Ігри - Mops Storage</title>
 </head>
+
 <body>
     <div class="preloader">
         <div class="preloader__image"></div>
@@ -32,49 +34,55 @@
                 <a class="navbar-link" aria-current="page" href="index.html">Головна</a>
                 <a class="navbar-link" aria-current="page" href="about.html">Про мене</a>
                 <a class="navbar-link" aria-current="page" href="projects.html">Проєкти</a>
-                <a class="navbar-link" aria-current="page" target="_blank" href="https://steamcommunity.com/id/ind_mops/screenshots/">Галерея</a>
+                <a class="navbar-link" aria-current="page" target="_blank"
+                    href="https://steamcommunity.com/id/ind_mops/screenshots/">Галерея</a>
                 <div class="dropdown" style="float:right;">
                     <button class="dropbtn navbar-link">Меню</button>
                     <div class="dropdown-content">
-                      <a class="btn" href="#">Мова</a>
-                      <div class="sub-dropdown">
-                            <a href="games.html"><img class="flag" src="assets/flags/ua.svg"></a>
-                            <a href="../en/games.html"><img class="flag" src="assets/flags/us.svg"></a>
-                            <a href="games.html"><img class="flag" src="assets/flags/pl.svg"></a>
-                      </div>
-                      <a href="manga.html">Манга</a>
-                      <a href="games.html">Ігри</a>
-                      <a href="support.html">Підтримка</a>
+                        <a class="btn" href="#">Мова</a>
+                        <div class="sub-dropdown">
+                            <a href="game.html"><img class="flag" src="assets/flags/ua.svg"></a>
+                            <a href="en/game.html"><img class="flag" src="assets/flags/us.svg"></a>
+                            <a href="jp/game.html"><img class="flag" src="assets/flags/jp.svg"></a>
+                            <a href="pl/game.html"><img class="flag" src="assets/flags/pl.svg"></a>
+                        </div>
+                        <a href="manga.html">Манга</a>
+                        <a href="game.html">Ігри</a>
+                        <a href="support.html">Підтримка</a>
                     </div>
                 </div>
             </div>
-    
+
         </div>
     </div>
     <div class="page-container">
         <main>
             <div class="page-head">Ігри</div>
-            <div class="page-subtitle">На цій сторінці, ви можете переглянути всі ігри в які я проходив чи проходжу. Тут знаходяться ігри, які є у мене в профілі <a href="https://steamcommunity.com/id/ind_mops/games/?tab=all" target="_blank" class="c1">Steam</a> та <span class="c2">Epic Games</span></div>
+            <div class="page-subtitle">На цій сторінці, ви можете переглянути всі ігри в які я проходив чи проходжу. Тут
+                знаходяться ігри, які є у мене в профілі <a href="https://steamcommunity.com/id/ind_mops/games/?tab=all"
+                    target="_blank" class="c1">Steam</a> та <span class="c2">Epic Games</span></div>
             <div class="game-filter">
-                    <div class="game-filter-btn"><a href="#tab1">Всі</a></div>
-                    <div class="game-filter-btn"><a href="#tab2">Пройдено</a></div>
-                    <div class="game-filter-btn"><a href="#tab3">Проходжу</a></div>
-                    <div class="game-filter-btn"><a href="#tab4">Заплановано</a></div>
-                    <div class="game-filter-btn"><a href="#tab5">Закинуто</a></div>
+                <div class="game-filter-btn"><a href="#tab1">Всі</a></div>
+                <div class="game-filter-btn"><a href="#tab2">Пройдено</a></div>
+                <div class="game-filter-btn"><a href="#tab3">Проходжу</a></div>
+                <div class="game-filter-btn"><a href="#tab4">Заплановано</a></div>
+                <div class="game-filter-btn"><a href="#tab5">Закинуто</a></div>
             </div>
             <div class="filter-content">
                 <div id="tab1" class="game-list">
                     <div class="game-cover">
-                        <div class="game-img" id="red-dead-redemption-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="red-dead-redemption-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Red Dead Redemption 2</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="package">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="package">
                                     <div class="label-text">Проходжу</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="package">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="package">
                                     <div class="label-text">71 година</div>
                                 </div>
                             </div>
@@ -82,20 +90,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="grand-theft-auto-v">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="grand-theft-auto-v"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Grand Theft Auto V</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">56 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">13.11.21</div>
                                 </div>
                             </div>
@@ -103,20 +114,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="far-cry-5">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="far-cry-5"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Far Cry 5</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">55 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">04.12.21</div>
                                 </div>
                             </div>
@@ -124,20 +138,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="far-cry-new-dawn">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="far-cry-new-dawn"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Far Cry: New Dawn</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">17 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">09.02.22</div>
                                 </div>
                             </div>
@@ -145,20 +162,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="half-life-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="half-life-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Half-Life 2</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">18.3 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">05.06.21</div>
                                 </div>
                             </div>
@@ -166,16 +186,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="assassins-creed-odyssey">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="assassins-creed-odyssey"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Assassin's Creed Odyssey</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">41 годин</div>
                                 </div>
                             </div>
@@ -183,16 +205,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="far-cry-4">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="far-cry-4"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Far Cry 4</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">27 годин</div>
                                 </div>
                             </div>
@@ -200,20 +224,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="the-forest">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="the-forest"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">The Forest</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">20 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">09.01.22</div>
                                 </div>
                             </div>
@@ -221,16 +248,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="valheim">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="valheim"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Valheim</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">77 годин</div>
                                 </div>
                             </div>
@@ -238,16 +267,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="the-іurvivalists">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="the-іurvivalists"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">The Survivalists</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">11 годин</div>
                                 </div>
                             </div>
@@ -255,20 +286,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="human-fall-flat">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="human-fall-flat"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Human: Fall Flat</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">8 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">09.01.22</div>
                                 </div>
                             </div>
@@ -276,16 +310,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="assassins-creed-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="assassins-creed-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Assassin's Creed II</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">7.4 годин</div>
                                 </div>
                             </div>
@@ -293,16 +329,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="grand-theft-auto-san-andreas">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="grand-theft-auto-san-andreas"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Grand Theft Auto: San Andreas</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">74 годин</div>
                                 </div>
                             </div>
@@ -310,16 +348,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="watch-dogs-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="watch-dogs-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Watch_Dogs 2</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">6.2 годин</div>
                                 </div>
                             </div>
@@ -327,16 +367,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="raft">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="raft"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Raft</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">5 годин</div>
                                 </div>
                             </div>
@@ -344,16 +386,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="detroit-become-human">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="detroit-become-human"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Detroit: Become Human</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">4.5 годин</div>
                                 </div>
                             </div>
@@ -361,16 +405,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="the-witcher-wild-hunt">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="the-witcher-wild-hunt"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">The Witcher: Wild Hunt</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">4.3 годин</div>
                                 </div>
                             </div>
@@ -378,16 +424,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="stalker-shadow-of-chernobyl">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="stalker-shadow-of-chernobyl"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">S.T.A.L.K.E.R.: Shadow of Chernobyl</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">4.1 годин</div>
                                 </div>
                             </div>
@@ -395,16 +443,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="life-is-strange-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="life-is-strange-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Life is Strange 2</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">3.8 годин</div>
                                 </div>
                             </div>
@@ -412,35 +462,39 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="dying-light">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="dying-light"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Dying Light</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Заплановано</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-------------------------------->   
+                    <!-------------------------------->
                 </div>
                 <div id="tab2" class="game-list">
                     <div class="game-cover">
-                        <div class="game-img" id="grand-theft-auto-v">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="grand-theft-auto-v"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Grand Theft Auto V</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">56 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">13.11.21</div>
                                 </div>
                             </div>
@@ -448,20 +502,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="far-cry-5">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="far-cry-5"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Far Cry 5</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">55 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">04.12.21</div>
                                 </div>
                             </div>
@@ -469,20 +526,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="far-cry-new-dawn">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="far-cry-new-dawn"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Far Cry: New Dawn</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">17 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">09.02.22</div>
                                 </div>
                             </div>
@@ -490,20 +550,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="half-life-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="half-life-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Half-Life 2</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">18.3 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">05.06.21</div>
                                 </div>
                             </div>
@@ -511,20 +574,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="the-forest">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="the-forest"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">The Forest</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">20 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">09.01.22</div>
                                 </div>
                             </div>
@@ -532,20 +598,23 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="human-fall-flat">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="human-fall-flat"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Human: Fall Flat</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">8 годин</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png" alt="calendar">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
+                                        alt="calendar">
                                     <div class="label-text">09.01.22</div>
                                 </div>
                             </div>
@@ -553,16 +622,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="grand-theft-auto-san-andreas">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="grand-theft-auto-san-andreas"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Grand Theft Auto: San Andreas</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Пройдено</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">74 годин</div>
                                 </div>
                             </div>
@@ -572,16 +643,18 @@
                 </div>
                 <div id="tab3" class="game-list">
                     <div class="game-cover">
-                        <div class="game-img" id="red-dead-redemption-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="red-dead-redemption-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Red Dead Redemption 2</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="package">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="package">
                                     <div class="label-text">Проходжу</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="package">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="package">
                                     <div class="label-text">71 година</div>
                                 </div>
                             </div>
@@ -591,31 +664,34 @@
                 </div>
                 <div id="tab4" class="game-list">
                     <div class="game-cover">
-                        <div class="game-img" id="dying-light">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="dying-light"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Dying Light</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Заплановано</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-------------------------------->   
+                    <!-------------------------------->
                 </div>
                 <div id="tab5" class="game-list">
                     <div class="game-cover">
-                        <div class="game-img" id="assassins-creed-odyssey">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="assassins-creed-odyssey"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Assassin's Creed Odyssey</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">41 годин</div>
                                 </div>
                             </div>
@@ -623,16 +699,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="far-cry-4">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="far-cry-4"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Far Cry 4</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">27 годин</div>
                                 </div>
                             </div>
@@ -640,16 +718,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="valheim">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="valheim"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Valheim</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">77 годин</div>
                                 </div>
                             </div>
@@ -657,16 +737,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="the-іurvivalists">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="the-іurvivalists"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">The Survivalists</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">11 годин</div>
                                 </div>
                             </div>
@@ -674,16 +756,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="assassins-creed-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="assassins-creed-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Assassin's Creed II</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">7.4 годин</div>
                                 </div>
                             </div>
@@ -691,16 +775,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="watch-dogs-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="watch-dogs-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Watch_Dogs 2</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">6.2 годин</div>
                                 </div>
                             </div>
@@ -708,16 +794,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="raft">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="raft"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Raft</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">5 годин</div>
                                 </div>
                             </div>
@@ -725,16 +813,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="detroit-become-human">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="detroit-become-human"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Detroit: Become Human</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">4.5 годин</div>
                                 </div>
                             </div>
@@ -742,16 +832,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="the-witcher-wild-hunt">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="the-witcher-wild-hunt"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">The Witcher: Wild Hunt</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">4.3 годин</div>
                                 </div>
                             </div>
@@ -759,16 +851,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="stalker-shadow-of-chernobyl">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="stalker-shadow-of-chernobyl"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">S.T.A.L.K.E.R.: Shadow of Chernobyl</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">4.1 годин</div>
                                 </div>
                             </div>
@@ -776,16 +870,18 @@
                     </div>
                     <!-------------------------------->
                     <div class="game-cover">
-                        <div class="game-img" id="life-is-strange-2">  </div>
-                        <div class="game-list-text">    
+                        <div class="game-img" id="life-is-strange-2"> </div>
+                        <div class="game-list-text">
                             <div class="game-list-name">Life is Strange 2</a></div>
                             <div class="game-list-info" onclick="Link4">
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png" alt="status game">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
+                                        alt="status game">
                                     <div class="label-text">Закинуто</div>
                                 </div>
                                 <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png" alt="timer">
+                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
+                                        alt="timer">
                                     <div class="label-text">3.8 годин</div>
                                 </div>
                             </div>
@@ -803,4 +899,5 @@
         </main>
     </div>
 </body>
+
 </html>
