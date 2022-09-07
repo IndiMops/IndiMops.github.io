@@ -1,0 +1,18 @@
+assets/favicon.ico
+assets/social baner.png
+assets/flags/ua.svg
+assets/flags/us.svg
+assets/flags/pl.svg
+assets/404.gif
+assets/сity/01.jpg
+assets/video/01.mp4
+assets/game-cover/
+assets/status-game.png
+assets/timer.png
+assets/calendar.png
+assets/hider.png
+assets/social/
+assets/fons/
+assets/manga/
+assets/status.png
+assets/release.png

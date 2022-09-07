@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "SansDetect";
+    src: url("assets/Text Sans Defect.otf") format("otf");
+}
+
+@font-face {
+    font-family: "JapariSans";
+    src: url("assets/fons/JapariSans.otf") format("otf");
+}
+
+
+@font-face {
+    font-family: "inter";
+    src: url("assets/fons/inter.woff2") format("wof2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    font-family: "SansDetect", serif;
+    float: left;
+}
+
+h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+p {
+    color: #fff;
+    font-size: 26px;
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+div {
+    padding: 10px;
+}
+
+#msg-welcome {
+    margin-top: 7%;
+    text-align: center;
+}
+
+#name {
+    color: #fcc203;
+}
+
+#social {
+    margin-left: 35%;
+    margin-right: 35%;
+    border-width: 50%;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#active {
+    margin-left: 29%;
+    margin-right: 29%;
+    display: block;
+    max-width: 50%;
+    text-align: center;
+}
+
+#alert {
+    display: flex;
+    margin: 0;
+    padding: 0.3;
+    background-color: #fed700;
+    border-bottom: 3px solid #fff;
+    border-radius: 5px;
+    font-family: "inter";
+    justify-content: space-between;
+    overflow-wrap: break-word;
+}
+
+#text_alert {
+    font-size: 18px;
+    padding-left: 36.6525px;
+    padding-top: 0.2;
+    width: 90%;
+    color: #4d3e48;
+    float: left;
+    
+}
+
+#hide_btn {
+    float: left;
+
+}
+
+#hider {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*hovers*/
+
+#hider:hover {
+    border: 1px solid #fff;
+}
+#GitHub:hover {
+    color: #a103fc;
+    font-size: 27px;
+}
+
+#Twitter:hover {
+    color: #1d9bf0;
+    font-size: 27px;
+}
+
+#Discord:hover {
+    color: #5865f2;
+    font-size: 27px;
+}
+
+#YoouTube:hover {
+    color: #ff0000;
+    font-size: 27px;
+}
+
+#download_CC:hover {
+    color: #ef3131;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        color: #fff;
+        font-size: 32px;
+    }
+    
+    p {
+        color: #fff;
+        font-size: 18px;
+        padding: 3px;
+    }
+    div {
+        padding: 10px;
+    }
+  
+    #text_alert {
+        font-size: 14px;
+    }
+    
+    /*hovers*/
+    #GitHub:hover {
+        font-size: 19px;
+    }
+    
+    #Twitter:hover {
+        font-size: 19px;
+    }
+    
+    #Discord:hover {
+        font-size: 19px;
+    }
+    
+    #YoouTube:hover {
+        font-size: 19px;
+    }
+
+    #social {
+        margin-left: 25%;
+        margin-right: 25%;
+        border-width: 50%;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    
+    #active {
+        margin-left: 25%;
+        margin-right: 25%;
+        display: block;
+        max-width: 50%;
+        text-align: center;
+    }
+    
+    
+}
