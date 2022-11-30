@@ -111,7 +111,7 @@ figure {
     width: 85px;
     padding: 32px;
     height: 85px;
-    background: url('http://mops-storage.xyz/assets/avatar.jpg') no-repeat;
+    background: url('assets/avatar.jpg') no-repeat;
     background-position: center;
     background-size: 150px auto;
     margin: 0 auto;
