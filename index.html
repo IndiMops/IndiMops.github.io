@@ -1,120 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0c0e">
+    <meta name="description" content="Особистий сайт Indi Mops: код, українські локалізації, переклади та цифровий архів.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:title" content="Indi Mops — Mops Storage">
+    <meta property="og:description" content="Код, українські локалізації, переклади та трохи цифрової ностальгії.">
+    <meta property="og:image" content="https://indimops.github.io/assets/social%20baner.png">
+    <meta property="og:url" content="https://indimops.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://indimops.github.io/">
+    <link rel="alternate" hreflang="uk" href="https://indimops.github.io/">
+    <link rel="alternate" hreflang="en" href="https://indimops.github.io/en/">
+    <link rel="alternate" hreflang="x-default" href="https://indimops.github.io/">
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="preload" href="assets/fons/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/site.js" defer></script>
+    <title>Indi Mops — Mops Storage</title>
+  </head>
+  <body class="site-body">
+    <a class="skip-link" href="#main-content">До вмісту</a>
+    <site-header current="home" lang="uk"></site-header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#fcc203">
-    <meta name="description"
-        content="Офіційна веб-сторінка Indi Mops, тут ви можете дізнатися більше про самого Indi та його діяльність.">
-    <meta name="robots" content="index,follow">
-    <meta name="twitter:url" content="https://mops-storage.xyz">
-    <meta name="twitter:title" content="Головна сторінка - Mops Storage">
-    <meta name="twitter:description"
-        content="Офіційна веб-сторінка Indi Mops, тут ви можете дізнатися більше про самого Indi та його діяльність.">
-    <meta name="twitter:image" content="assets/social baner.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" media="(max-device-width:480px)" href="mob.css">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <title>Головна сторінка - Mops Storage</title>
-</head>
+    <main id="main-content">
+      <section class="container hero" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Особистий сайт · з 2021</p>
+          <h1 id="hero-title">Привіт, я <span>Indi Mops</span></h1>
+          <p class="hero__lead">
+            Пишу код, працюю з українськими локалізаціями й складаю тут проєкти,
+            переклади та маленькі цифрові спогади.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="projects.html">
+              Переглянути проєкти <span class="button__arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="button" href="about.html">Трохи більше про мене</a>
+          </div>
+          <ul class="hero__facts" aria-label="Основні напрямки">
+            <li>Python та JavaScript</li>
+            <li>Українські локалізації</li>
+            <li>Статичний веб</li>
+          </ul>
+        </div>
 
-<body>
-    <div class="preloader">
-        <div class="preloader__image"></div>
-    </div>
-    <div id="alert">
-        <div id="text_alert">
-            <b>На цю мить на території моєї України ведеться війна! Прошу всіх земляків не панікувати, вірте в наших
-                захисників! Особливе прохання не розповсюджуйте в інтернеті інформацію про пересування ЗСУ, а про
-                пересування ворога повідомляти поліції, або місцевій тер. обороні! Якщо є можливість, ви можете
-                підтримати армію України гривнею, то можете їх відправити на рахунок який надав НБУ[<a
-                    style="text-decoration: none; color: #eb0b0b"
-                    href="https://bank.gov.ua/frontend/content/uaf_frame.html">рахунок</b></a>]
+        <div class="portrait-stage" aria-label="Портрет Indi Mops">
+          <div class="portrait-frame">
+            <img src="assets/avatar.jpg" width="640" height="640" alt="Indi Mops" fetchpriority="high">
+          </div>
+          <span class="sticker sticker--code" aria-hidden="true">{ code }</span>
+          <span class="sticker sticker--ua" aria-hidden="true">зроблено в Україні</span>
+          <span class="sticker sticker--archive" aria-hidden="true">архів 2021—∞</span>
         </div>
-        <div id="hide_btn">
-            <img id="hider" oncontextmenu="return false;" src="assets/hider.png">
-        </div>
-    </div>
-    <div class="navbar">
-        <div class="navbar-logo">
-            <a class="navbar-logo-link" aria-current="page" href="index.html">Indi Mops</a>
-            <div class="navbar-links">
-                <a class="navbar-link" aria-current="page" href="index.html">Головна</a>
-                <a class="navbar-link" aria-current="page" href="about.html">Про мене</a>
-                <a class="navbar-link" aria-current="page" href="projects.html">Проєкти</a>
-                <a class="navbar-link" aria-current="page" target="_blank"
-                    href="https://steamcommunity.com/id/ind_mops/screenshots/">Галерея</a>
-                <div class="dropdown" style="float:right;">
-                    <button class="dropbtn navbar-link">Меню</button>
-                    <div class="dropdown-content">
-                        <a class="btn" href="#">Мова</a>
-                        <div class="sub-dropdown">
-                            <a href="/"><img class="flag" src="assets/flags/ua.svg"></a>
-                            <a href="en/index.html"><img class="flag" src="assets/flags/us.svg"></a>
-                            <a href="jp/index.html"><img class="flag" src="assets/flags/jp.svg"></a>
-                            <a href="pl/index.html"><img class="flag" src="assets/flags/pl.svg"></a>
-                        </div>
-                        <a href="manga.html">Манга</a>
-                        <a href="game.html">Ігри</a>
-                        <a href="support.html">Підтримка</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mob-navbar">
-                <a href="#" class="mob-menu-btn">.</a>
-                <span class="mob-menu-btn-ico"></span>
-            </div>
-        </div>
-    </div>
-    <div class="page-container-home">
-        <main>
-            <figure class="avatar">
-                <div class="avatar-circle"></div>
-                <p id="transparency">_</p>
-            </figure>
-            <hr>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="directions-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
             <div>
-                <p>Привіт! Мене звати Богдан, також мене знають як: <span class="c1">Indi Mops</span> та <span
-                        class="c1">Мося</span>. Мені <span class="c1">17</span> років, живу в невеличкому українському
-                    містечку <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BA%D0%B0%D0%BB%D0%B0%D1%82"
-                        class="c2">Скалат</a>.</p>
-                <p>Займаюсь програмуванням на любительському рівні(<span class="c3">Python</span>), також займаюсь
-                    перекладом ігор та манги українською мову.</p>
-                <p>У вільний від роботи час граю в усілякі ігри чи переглядаю аніме, читаю мангу, слухаю музику та всяке
-                    таке різне...</p>
+              <p class="eyebrow">Що тут зберігається</p>
+              <h2 id="directions-title">Три частини одного хобі</h2>
             </div>
-            <hr>
-            <div class="social-links">
-                <a href="https://github.com/IndiMops" target="_blank">
-                    <img class="social-link" src="assets/social/github.png">
-                </a>
-                <a href="https://twitter.com/IndiMops" target="_blank">
-                    <img class="social-link" src="assets/social/twitter.png">
-                </a>
-                <a href="https://www.youtube.com/c/IndiMops" target="_blank">
-                    <img class="social-link" src="assets/social/youtube.png">
-                </a>
-                <a href="https://discord.com/users/734082410504781854" target="_blank">
-                    <img class="social-link" src="assets/social/discord.png">
-                </a>
-                <a href="https://www.instagram.com/indmops/" target="_blank">
-                    <img class="social-link" src="assets/social/instagram.png">
-                </a>
-                <a href="https://steamcommunity.com/id/ind_mops/" target="_blank">
-                    <img class="social-link" src="assets/social/steam.png">
-                </a>
-            </div>
-        </main>
-    </div>
-    <footer>
-        <br>
-        ©2021-2022 Всі права захищено <a href="#">Mops Storage</a>
-    </footer>
-</body>
+            <p>Сайт усе ще особистий і трохи дивакуватий — просто тепер ним зручніше користуватися.</p>
+          </div>
 
+          <div class="feature-grid">
+            <article class="feature-card" data-reveal>
+              <span class="feature-card__index">01</span>
+              <h3>Код</h3>
+              <p>Невеликі утиліти, Discord-боти й експерименти, з яких поступово виростають справжні проєкти.</p>
+            </article>
+            <article class="feature-card" data-reveal>
+              <span class="feature-card__index">02</span>
+              <h3>Локалізація</h3>
+              <p>Українські переклади ігор та манги — робота зі словами, контекстом і любов’ю до деталей.</p>
+            </article>
+            <article class="feature-card" data-reveal>
+              <span class="feature-card__index">03</span>
+              <h3>Архів</h3>
+              <p>Ігровий щоденник, старі роботи та речі, які не хочеться загубити після чергового редизайну.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">Вибране</p>
+              <h2 id="projects-title">Проєкти з історією</h2>
+            </div>
+            <a class="button button--text" href="projects.html">
+              Усі проєкти <span class="button__arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="project-list" data-reveal>
+            <a class="project-row" href="https://github.com/IndiMops/IndiMops.github.io" target="_blank" rel="noreferrer noopener">
+              <span class="project-row__title">Mops Storage</span>
+              <span class="project-row__description">Цей сайт — перезібраний на чистих HTML, CSS і JavaScript.</span>
+              <span class="project-row__meta"><span class="tag">web</span><span class="tag">2021—2026</span></span>
+            </a>
+            <a class="project-row" href="projects.html#localizations">
+              <span class="project-row__title">Українські локалізації</span>
+              <span class="project-row__description">Deltarune, CrossCode, Red Dead Redemption 2 та інші старі спроби.</span>
+              <span class="project-row__meta"><span class="tag">localization</span><span class="tag">archive</span></span>
+            </a>
+            <a class="project-row" href="projects.html#bots">
+              <span class="project-row__title">Discord-боти</span>
+              <span class="project-row__description">Від першого модераційного бота до більших вікі-проєктів.</span>
+              <span class="project-row__meta"><span class="tag">Python</span><span class="tag">Discord</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" aria-labelledby="archive-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">Цифрова полиця</p>
+              <h2 id="archive-title">Старе не означає зайве</h2>
+            </div>
+            <p>Статуси тут навмисно збережені як знімок старої версії сайту, а не як актуальна статистика.</p>
+          </div>
+
+          <div class="home-archive">
+            <a class="archive-link archive-link--games" href="game.html" data-reveal>
+              <p class="eyebrow">20 записів</p>
+              <h3>Ігровий щоденник</h3>
+              <p>Ігри, години та статуси, зафіксовані у 2021–2022 роках.</p>
+            </a>
+            <a class="archive-link archive-link--manga" href="manga.html" data-reveal>
+              <p class="eyebrow">4 переклади</p>
+              <h3>Манга українською</h3>
+              <p>Перші завершені роботи, плани й переклади, що залишилися в процесі.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <site-footer lang="uk"></site-footer>
+  </body>
 </html>

@@ -1,73 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#fcc203">
-    <meta name="description"
-        content="Офіційна веб-сторінка Indi Mops, тут ви можете дізнатися більше про самого Indi та його діяльність.">
-    <meta name="robots" content="index,follow">
-    <meta name="twitter:url" content="https://mops-storage.xyz">
-    <meta name="twitter:title" content="Сторінку не знайдено">
-    <meta name="twitter:description"
-        content="Офіційна веб-сторінка Indi Mops, тут ви можете дізнатися більше про самого Indi та його діяльність.">
-    <meta name="twitter:image" content="assets/social baner.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <title>Сторінку не знайдено</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Сторінку не знайдено — поверніться на головну сторінку Indi Mops.">
+  <base href="/">
+  <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="preload" href="/assets/fons/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
+  <title>Сторінку не знайдено — Indi Mops</title>
 </head>
+<body class="site-body">
+  <a class="skip-link" href="/404.html#main-content" data-error-skip>До вмісту</a>
+  <site-header lang="uk"></site-header>
 
-<body>
-    <div class="preloader">
-        <div class="preloader__image"></div>
-    </div>
-    <div class="navbar">
-        <div class="navbar-logo">
-            <a class="navbar-logo-link" aria-current="page" href="index.html">Indi Mops</a>
-            <div class="navbar-links">
-                <a class="navbar-link" aria-current="page" href="index.html">Головна</a>
-                <a class="navbar-link" aria-current="page" href="about.html">Про мене</a>
-                <a class="navbar-link" aria-current="page" href="projects.html">Проєкти</a>
-                <a class="navbar-link" aria-current="page" target="_blank"
-                    href="https://steamcommunity.com/id/ind_mops/screenshots/">Галерея</a>
-                <div class="dropdown" style="float:right;">
-                    <button class="dropbtn navbar-link">Меню</button>
-                    <div class="dropdown-content">
-                        <a class="btn" href="#">Мова</a>
-                        <div class="sub-dropdown">
-                            <a href="404.html"><img class="flag" src="assets/flags/ua.svg"></a>
-                            <a href="en/404.html"><img class="flag" src="assets/flags/us.svg"></a>
-                            <a href="jp/404.html"><img class="flag" src="assets/flags/jp.svg"></a>
-                            <a href="pl/404.html"><img class="flag" src="assets/flags/pl.svg"></a>
-                        </div>
-                        <a href="manga.html">Манга</a>
-                        <a href="game.html">Ігри</a>
-                        <a href="support.html">Підтримка</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-container-error">
-        <main>
-            <div class="error">
-                <img src="assets/404.gif">
-                <div class="text-error">
-                    <h2>Сторінку не знайдено!</h2>
-                    <a href="/">Повернутися на головну</a>
-                </div>
-            </div>
-        </main>
-    </div>
-    <footer>
-        <br>
-        <div class="copy">©2021-2022 Всі права захищено <a href="#">Mops Storage</a></div>
-    </footer>
+  <main id="main-content" class="error-page">
+    <section class="error-card" aria-labelledby="error-title">
+      <img
+        class="error-card__image"
+        src="/assets/404.gif"
+        width="319"
+        height="253"
+        alt="Засмучена анімована героїня лежить, підперши голову рукою"
+        data-error-image
+      >
+      <p class="error-card__code" data-error-code>Помилка 404</p>
+      <h1 id="error-title" data-error-title>Сторінка кудись утекла</h1>
+      <p data-error-message>
+        Можливо, посилання застаріло або в адресі причаїлася помилка. На головній усе ще
+        є проєкти, переклади й трохи ностальгії.
+      </p>
+      <a class="button button--primary" href="/index.html" data-error-home>
+        <span data-error-home-label>Повернутися на головну</span>
+        <span class="button__arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <site-footer lang="uk"></site-footer>
 </body>
-
 </html>

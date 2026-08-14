@@ -1,903 +1,337 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <meta name="theme-color" content="#fcc203">
-    <meta name="description" content="На цій сторінці можна знайти ігри в які я граю">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0c0e">
+    <meta name="description" content="Архівний список ігор Indi Mops зі статусами та часом у грі, зафіксованими у 2021–2022 роках.">
     <meta name="robots" content="index,follow">
-    <meta name="twitter:url" content="https://mops-storage.xyz/games">
-    <meta name="twitter:title" content="Ігри - Mops Storage">
-    <meta name="twitter:description" content="На цій сторінці можна знайти ігри в які я граю">
-    <meta name="twitter:image" content="assets/social baner.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="modules/dist/css/lightbox.css">
-    <link rel="stylesheet" type="text/css" href="game-cover.css">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="fetch_steam.js"></script>
-    <title>Ігри - Mops Storage</title>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:title" content="Ігри — Indi Mops">
+    <meta property="og:description" content="Особистий архів ігор за 2021–2022 роки.">
+    <meta property="og:image" content="https://indimops.github.io/assets/social%20baner.png">
+    <meta property="og:url" content="https://indimops.github.io/game.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ігри — Indi Mops">
+    <meta name="twitter:description" content="Особистий архів ігор за 2021–2022 роки.">
+    <meta name="twitter:image" content="https://indimops.github.io/assets/social%20baner.png">
+    <link rel="canonical" href="https://indimops.github.io/game.html">
+    <link rel="alternate" hreflang="uk" href="https://indimops.github.io/game.html">
+    <link rel="alternate" hreflang="en" href="https://indimops.github.io/en/game.html">
+    <link rel="alternate" hreflang="x-default" href="https://indimops.github.io/game.html">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preload" href="assets/fons/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/site.js" defer></script>
+    <title>Ігри — Indi Mops</title>
 </head>
+<body class="site-body" data-page="games">
+    <a class="skip-link" href="#main-content">До вмісту</a>
+    <site-header current="games" lang="uk"></site-header>
 
-<body>
-    <div class="preloader">
-        <div class="preloader__image"></div>
-    </div>
-    <div class="navbar">
-        <div class="navbar-logo">
-            <a class="navbar-logo-link" aria-current="page" href="index.html">Indi Mops</a>
-            <div class="navbar-links">
-                <a class="navbar-link" aria-current="page" href="index.html">Головна</a>
-                <a class="navbar-link" aria-current="page" href="about.html">Про мене</a>
-                <a class="navbar-link" aria-current="page" href="projects.html">Проєкти</a>
-                <a class="navbar-link" aria-current="page" target="_blank"
-                    href="https://steamcommunity.com/id/ind_mops/screenshots/">Галерея</a>
-                <div class="dropdown" style="float:right;">
-                    <button class="dropbtn navbar-link">Меню</button>
-                    <div class="dropdown-content">
-                        <a class="btn" href="#">Мова</a>
-                        <div class="sub-dropdown">
-                            <a href="game.html"><img class="flag" src="assets/flags/ua.svg"></a>
-                            <a href="en/game.html"><img class="flag" src="assets/flags/us.svg"></a>
-                            <a href="jp/game.html"><img class="flag" src="assets/flags/jp.svg"></a>
-                            <a href="pl/game.html"><img class="flag" src="assets/flags/pl.svg"></a>
-                        </div>
-                        <a href="manga.html">Манга</a>
-                        <a href="game.html">Ігри</a>
-                        <a href="support.html">Підтримка</a>
-                    </div>
-                </div>
+    <main id="main-content">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <p class="eyebrow">Особистий архів · знімок 2021–2022</p>
+                <h1 id="page-title">Ігри</h1>
+                <p class="page-lead">
+                    Історичний список ігор із мого профілю
+                    <a href="https://steamcommunity.com/id/ind_mops/games/?tab=all" target="_blank" rel="noopener noreferrer">Steam</a>
+                    та бібліотеки Epic Games. Статуси, дати й час у грі нижче зафіксовані у 2021–2022 роках і не описують мій поточний прогрес.
+                </p>
             </div>
+        </section>
 
-        </div>
-    </div>
-    <div class="page-container">
-        <main>
-            <div class="page-head">Ігри</div>
-            <div class="page-subtitle">На цій сторінці, ви можете переглянути всі ігри в які я проходив чи проходжу. Тут
-                знаходяться ігри, які є у мене в профілі <a href="https://steamcommunity.com/id/ind_mops/games/?tab=all"
-                    target="_blank" class="c1">Steam</a> та <span class="c2">Epic Games</span></div>
-            <div class="game-filter">
-                <div class="game-filter-btn"><a href="#tab1">Всі</a></div>
-                <div class="game-filter-btn"><a href="#tab2">Пройдено</a></div>
-                <div class="game-filter-btn"><a href="#tab3">Проходжу</a></div>
-                <div class="game-filter-btn"><a href="#tab4">Заплановано</a></div>
-                <div class="game-filter-btn"><a href="#tab5">Закинуто</a></div>
+        <section class="section" aria-labelledby="games-archive-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">20 збережених записів</p>
+                        <h2 id="games-archive-title">Ігрова полиця</h2>
+                    </div>
+                    <p class="section-lead">Відфільтруйте записи за тим статусом, який вони мали у старій версії сайту.</p>
+                </div>
+
+                <div class="filter-bar" role="group" aria-label="Фільтр ігор за архівним статусом">
+                    <button class="is-active" type="button" data-filter="all" aria-pressed="true">Усі</button>
+                    <button type="button" data-filter="completed" aria-pressed="false">Пройдено</button>
+                    <button type="button" data-filter="playing" aria-pressed="false">Проходив</button>
+                    <button type="button" data-filter="planned" aria-pressed="false">Заплановано</button>
+                    <button type="button" data-filter="paused" aria-pressed="false">Призупинено</button>
+                    <span class="filter-status" data-filter-result data-filter-status aria-live="polite">Показано: 20</span>
+                </div>
+
+                <div class="archive-grid" id="games-archive">
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="playing">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/red-dead-redemption-2.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Обкладинка гри «Red Dead Redemption 2»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Red Dead Redemption 2</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--playing">Проходжу</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>71 година</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="completed">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/grand-theft-auto-v.jpg" width="2880" height="1800" loading="lazy" decoding="async" alt="Обкладинка гри «Grand Theft Auto V»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Grand Theft Auto V</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--completed">Пройдено</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>56 годин</dd></div>
+                                <div class="archive-meta__item"><dt>Дата</dt><dd><time datetime="2021-11-13">13.11.21</time></dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="completed">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/far-cry-5.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Обкладинка гри «Far Cry 5»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Far Cry 5</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--completed">Пройдено</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>55 годин</dd></div>
+                                <div class="archive-meta__item"><dt>Дата</dt><dd><time datetime="2021-12-04">04.12.21</time></dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="completed">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/far-cry-new-dawn.jpg" width="2500" height="1250" loading="lazy" decoding="async" alt="Обкладинка гри «Far Cry: New Dawn»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Far Cry: New Dawn</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--completed">Пройдено</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>17 годин</dd></div>
+                                <div class="archive-meta__item"><dt>Дата</dt><dd><time datetime="2022-02-09">09.02.22</time></dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="completed">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/half-life-2.jpg" width="3840" height="2160" loading="lazy" decoding="async" alt="Обкладинка гри «Half-Life 2»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Half-Life 2</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--completed">Пройдено</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>18,3 години</dd></div>
+                                <div class="archive-meta__item"><dt>Дата</dt><dd><time datetime="2021-06-05">05.06.21</time></dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/assassins-creed-odyssey.jpg" width="3840" height="2160" loading="lazy" decoding="async" alt="Обкладинка гри «Assassin's Creed Odyssey»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Assassin's Creed Odyssey</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>41 година</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/far-cry-4.jpg" width="2580" height="1450" loading="lazy" decoding="async" alt="Обкладинка гри «Far Cry 4»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Far Cry 4</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>27 годин</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="completed">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/the-forest.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="Обкладинка гри «The Forest»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">The Forest</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--completed">Пройдено</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>20 годин</dd></div>
+                                <div class="archive-meta__item"><dt>Дата</dt><dd><time datetime="2022-01-09">09.01.22</time></dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/valheim.png" width="742" height="442" loading="lazy" decoding="async" alt="Обкладинка гри «Valheim»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Valheim</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>77 годин</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/the-іurvivalists.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="Обкладинка гри «The Survivalists»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">The Survivalists</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>11 годин</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="completed">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/human-fall-flat.jpg" width="1430" height="645" loading="lazy" decoding="async" alt="Обкладинка гри «Human: Fall Flat»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Human: Fall Flat</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--completed">Пройдено</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>8 годин</dd></div>
+                                <div class="archive-meta__item"><dt>Дата</dt><dd><time datetime="2022-01-09">09.01.22</time></dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/assassins-creed-2.jpg" width="1266" height="711" loading="lazy" decoding="async" alt="Обкладинка гри «Assassin's Creed II»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Assassin's Creed II</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>7,4 години</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="completed">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/grand-theft-auto-san-andreas.jpg" width="1200" height="674" loading="lazy" decoding="async" alt="Обкладинка гри «Grand Theft Auto: San Andreas»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Grand Theft Auto: San Andreas</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--completed">Пройдено</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>74 години</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/watch-dogs-2.jpg" width="960" height="540" loading="lazy" decoding="async" alt="Обкладинка гри «Watch_Dogs 2»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Watch_Dogs 2</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>6,2 години</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/raft.png" width="1110" height="500" loading="lazy" decoding="async" alt="Обкладинка гри «Raft»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Raft</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>5 годин</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/detroit-become-human.jpg" width="1000" height="273" loading="lazy" decoding="async" alt="Обкладинка гри «Detroit: Become Human»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Detroit: Become Human</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>4,5 години</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/the-witcher-wild-hunt.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Обкладинка гри «The Witcher: Wild Hunt»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">The Witcher: Wild Hunt</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>4,3 години</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/stalker-shadow-of-chernobyl.jpg" width="750" height="422" loading="lazy" decoding="async" alt="Обкладинка гри «S.T.A.L.K.E.R.: Shadow of Chernobyl»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">S.T.A.L.K.E.R.: Shadow of Chernobyl</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>4,1 години</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="paused">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/life-is-strange-2.jpg" width="1536" height="864" loading="lazy" decoding="async" alt="Обкладинка гри «Life is Strange 2»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Life is Strange 2</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--paused">Закинуто</span></dd></div>
+                                <div class="archive-meta__item"><dt>Час у грі</dt><dd>3,8 години</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="archive-card archive-card--landscape" data-filter-item data-status="planned">
+                        <div class="archive-card__media">
+                            <img class="archive-card__image" src="assets/game-cover/dying-light.jpg" width="4000" height="2250" loading="lazy" decoding="async" alt="Обкладинка гри «Dying Light»">
+                        </div>
+                        <div class="archive-card__body">
+                            <h2 class="archive-card__title">Dying Light</h2>
+                            <dl class="archive-meta">
+                                <div class="archive-meta__item"><dt>Статус у знімку</dt><dd><span class="status-badge status-badge--planned">Заплановано</span></dd></div>
+                            </dl>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="filter-content">
-                <div id="tab1" class="game-list">
-                    <div class="game-cover">
-                        <div class="game-img" id="red-dead-redemption-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Red Dead Redemption 2</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="package">
-                                    <div class="label-text">Проходжу</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="package">
-                                    <div class="label-text">71 година</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="grand-theft-auto-v"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Grand Theft Auto V</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">56 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">13.11.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="far-cry-5"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Far Cry 5</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">55 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">04.12.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="far-cry-new-dawn"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Far Cry: New Dawn</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">17 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">09.02.22</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="half-life-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Half-Life 2</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">18.3 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">05.06.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="assassins-creed-odyssey"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Assassin's Creed Odyssey</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">41 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="far-cry-4"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Far Cry 4</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">27 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="the-forest"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">The Forest</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">20 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">09.01.22</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="valheim"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Valheim</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">77 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="the-іurvivalists"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">The Survivalists</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">11 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="human-fall-flat"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Human: Fall Flat</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">8 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">09.01.22</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="assassins-creed-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Assassin's Creed II</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">7.4 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="grand-theft-auto-san-andreas"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Grand Theft Auto: San Andreas</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">74 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="watch-dogs-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Watch_Dogs 2</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">6.2 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="raft"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Raft</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">5 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="detroit-become-human"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Detroit: Become Human</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">4.5 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="the-witcher-wild-hunt"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">The Witcher: Wild Hunt</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">4.3 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="stalker-shadow-of-chernobyl"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">S.T.A.L.K.E.R.: Shadow of Chernobyl</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">4.1 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="life-is-strange-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Life is Strange 2</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">3.8 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="dying-light"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Dying Light</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Заплановано</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                </div>
-                <div id="tab2" class="game-list">
-                    <div class="game-cover">
-                        <div class="game-img" id="grand-theft-auto-v"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Grand Theft Auto V</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">56 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">13.11.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="far-cry-5"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Far Cry 5</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">55 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">04.12.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="far-cry-new-dawn"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Far Cry: New Dawn</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">17 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">09.02.22</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="half-life-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Half-Life 2</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">18.3 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">05.06.21</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="the-forest"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">The Forest</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">20 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">09.01.22</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="human-fall-flat"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Human: Fall Flat</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">8 годин</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/calendar.png"
-                                        alt="calendar">
-                                    <div class="label-text">09.01.22</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="grand-theft-auto-san-andreas"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Grand Theft Auto: San Andreas</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Пройдено</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">74 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                </div>
-                <div id="tab3" class="game-list">
-                    <div class="game-cover">
-                        <div class="game-img" id="red-dead-redemption-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Red Dead Redemption 2</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="package">
-                                    <div class="label-text">Проходжу</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="package">
-                                    <div class="label-text">71 година</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                </div>
-                <div id="tab4" class="game-list">
-                    <div class="game-cover">
-                        <div class="game-img" id="dying-light"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Dying Light</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Заплановано</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                </div>
-                <div id="tab5" class="game-list">
-                    <div class="game-cover">
-                        <div class="game-img" id="assassins-creed-odyssey"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Assassin's Creed Odyssey</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">41 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="far-cry-4"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Far Cry 4</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">27 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="valheim"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Valheim</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">77 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="the-іurvivalists"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">The Survivalists</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">11 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="assassins-creed-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Assassin's Creed II</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">7.4 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="watch-dogs-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Watch_Dogs 2</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">6.2 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="raft"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Raft</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">5 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="detroit-become-human"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Detroit: Become Human</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">4.5 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="the-witcher-wild-hunt"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">The Witcher: Wild Hunt</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">4.3 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="stalker-shadow-of-chernobyl"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">S.T.A.L.K.E.R.: Shadow of Chernobyl</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">4.1 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                    <div class="game-cover">
-                        <div class="game-img" id="life-is-strange-2"> </div>
-                        <div class="game-list-text">
-                            <div class="game-list-name">Life is Strange 2</a></div>
-                            <div class="game-list-info" onclick="Link4">
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/status-game.png"
-                                        alt="status game">
-                                    <div class="label-text">Закинуто</div>
-                                </div>
-                                <div class="label">
-                                    <img class="label-img" oncontextmenu="return false;" src="assets/timer.png"
-                                        alt="timer">
-                                    <div class="label-text">3.8 годин</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------->
-                </div>
-                <!--
-                    <div class="no-game">
-                        <div class="no-game-title">Ігри не знайдено!</div>
-                        <div class="no-game-subtitle">В цій категорії немає ігор, виберіть іншу категорію.</div>
-                    </div>
-                -->
-            </div>
-        </main>
-    </div>
+        </section>
+    </main>
+
+    <site-footer lang="uk"></site-footer>
 </body>
-
 </html>
