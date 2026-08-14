@@ -22,10 +22,10 @@ const locales = {
         about: "Про мене",
         projects: "Проєкти",
         games: "Ігровий щоденник",
-        manga: "Переклади манги",
+        manga: "Переклади манґи",
       },
       archiveDescriptions: {
-        games: "Пройдене, відкладене й заплановане",
+        games: "Пройдене, закинуте й заплановане",
         manga: "Невеликий архів перекладацьких робіт",
       },
       archive: "Архів",
@@ -69,7 +69,7 @@ const locales = {
         manga: "Manga translations",
       },
       archiveDescriptions: {
-        games: "Completed, paused, and planned games",
+        games: "Completed, dropped, and planned games",
         manga: "A small archive of translation work",
       },
       archive: "Archive",
@@ -132,7 +132,7 @@ const socialLinks = [
     label: "Steam",
     href: "https://steamcommunity.com/id/ind_mops/",
     icon: "assets/social/steam.png",
-  }
+  },
 ];
 
 const normalizeLocale = (value) => {

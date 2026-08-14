@@ -26,8 +26,6 @@ if (-not [string]::Equals($distParent, $repoRoot, $pathComparison) -or
     throw "Refusing to clean an unexpected output path: $distPath"
 }
 
-$cityDirectory = ([char]0x0441).ToString() + 'ity'
-
 $siteInputs = @(
     'index.html'
     'about.html'
@@ -41,16 +39,20 @@ $siteInputs = @(
     'assets/js'
     'assets/favicon.ico'
     'assets/avatar.jpg'
-    'assets/social baner.png'
+    'assets/social-banner.png'
     'assets/404.gif'
-    'assets/fons/inter.woff2'
-    'assets/fons/JapariSans.otf'
-    'assets/social'
+    'assets/fonts/inter.woff2'
+    'assets/fonts/japari-sans.otf'
+    'assets/social/github.png'
+    'assets/social/discord.png'
+    'assets/social/telegram.png'
+    'assets/social/instagram.png'
+    'assets/social/youtube.png'
+    'assets/social/steam.png'
     'assets/game-cover'
-    'assets/manga/Manga cover'
-    "assets/$cityDirectory/01.jpg"
+    'assets/manga/covers'
+    'assets/city/01.jpg'
     'assets/video/01.mp4'
-    '.well-known'
 )
 
 # Validate the complete allowlist before replacing a previously successful build.

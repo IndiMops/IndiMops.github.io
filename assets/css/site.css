@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inter Local";
-  src: url("../fons/inter.woff2") format("woff2");
+  src: url("../fonts/inter.woff2") format("woff2");
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Japari";
-  src: url("../fons/JapariSans.otf") format("opentype");
+  src: url("../fonts/japari-sans.otf") format("opentype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -907,7 +907,7 @@ main {
 }
 
 .archive-link--manga {
-  --archive-image: url("../manga/Manga cover/The Ends of a Dream.jpg");
+  --archive-image: url("../manga/covers/the-ends-of-a-dream.jpg");
 }
 
 .page-hero {
