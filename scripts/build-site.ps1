@@ -53,6 +53,7 @@ $siteInputs = @(
     'assets/manga/covers'
     'assets/city/01.jpg'
     'assets/video/01.mp4'
+    '.well-known/discord'
 )
 
 # Validate the complete allowlist before replacing a previously successful build.
